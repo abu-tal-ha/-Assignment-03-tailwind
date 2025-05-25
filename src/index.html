@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tailwind project</title>
+    <link rel="stylesheet" href="./output.css" />
+
+    <!-- font -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- navbar is start  -->
+    <section class="relative min-h-screen m-0   p-0 overflow-x-hidden">
+      <!-- Background Image Layer -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/assets/images/hero section.png"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+      </div>
+
+      <!-- Content Layer  -->
+      <div class="relative z-10">
+        <!-- Navbar -->
+        <nav
+          class="bg-white rounded-full px-6 py-3 max-w-6xl mx-auto mt-5 shadow-md flex items-center justify-between"
+        >
+          <div class="text-green-900 font-serif text-xl font-semibold">
+            CoolQuest
+          </div>
+
+          <!-- Hamburger -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none cursor-pointer">
+              <svg
+                class="w-6 h-6 text-green-900"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Menu items -->
+          <ul
+            id="menu"
+            class="hidden md:flex space-x-6 text-gray-800 font-medium items-center"
+          >
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Past Work</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li>
+              <button
+                class="bg-green-900 text-white px-5 py-2 rounded-full cursor-pointer hover:bg-green-800 transition"
+              >
+                Get Free Quote
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden flex flex-col items-center mt-2 space-y-4 bg-white mx-4 rounded-lg py-4 shadow"
+        >
+          <a href="#" class="text-gray-800">About Us</a>
+          <a href="#" class="text-gray-800">Services</a>
+          <a href="#" class="text-gray-800">Past Work</a>
+          <a href="#" class="text-gray-800">Reviews</a>
+          <button
+            class="bg-green-900 text-white px-5 py-2 rounded-full cursor-pointer hover:bg-green-800 transition"
+          >
+            Get Free Quote
+          </button>
+        </div>
+
+
+
+
+        <!-- Hero Content (Optional) -->
+        <!-- HVAC Landing Section -->
+        <div class=" mt-12   text-white px-4 py-10 md:py-16 lg:py-20">
+          <div
+            class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+          >
+            <!-- Left Content -->
+            <div>
+              <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+                Reliable HVAC for <br />
+                Every Season
+              </h1>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center  ">
+                  <span class="text-lg flex gap-2"
+                    ><img src="/assets/images/checkmark-badge-01.png" alt=""> Certified & Experienced Technicians</span
+                  >
+                </li>
+                <li class=" items-center ">
+                  <span class="text-lg flex gap-2"><img src="/assets/images/alarm-clock.png" alt=""> Fast, Reliable Service</span>
+                </li>
+                <li class="items-center ">
+                  <span class="text-lg flex gap-2"
+                    ><img src="/assets/images/hot-price.png" alt=""> Transparent, Affordable Pricing</span
+                  >
+                </li>
+              </ul>
+
+              <!-- Form -->
+              <form
+                class="grid grid-cols-1 bg-white p-2 rounded-xl sm:grid-cols-2 gap-3 mb-8 max-w-lg"
+              >
+                <input
+                  type="text"
+                  placeholder="Name"
+                  class="p-3 rounded border border-green-600 text-black"
+                />
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  class="p-3 rounded border border-green-600 text-black"
+                />
+                <select
+                  class="p-3 rounded border border-green-600 text-black col-span-1 sm:col-span-1"
+                >
+                  <option>Service</option>
+                  <option>AC Installation</option>
+                  <option>Repair</option>
+                  <option>Maintenance</option>
+                </select>
+                <button
+                  type="submit"
+                  class="bg-green-800 text-white p-3 cursor-pointer rounded hover:bg-green-500 col-span-1 sm:col-span-1"
+                >
+                  Submit
+                </button>
+              </form>
+
+              <!-- Installer Logos -->
+              <div class=" items-center mt-12">
+                <span class="text-sm">Certified Installer</span>
+             <div class="flex gap-6 mt-4 ">
+                 <img
+                  src="/assets/images/path7.png"
+                  alt="GAF Logo"
+                  class="h-6 cursor-pointer"
+                />
+                <img
+                  src="/assets/images/Group 1.png"
+                  alt="Lennox Logo"
+                  class="h-6 cursor-pointer"
+                />
+                <img
+                  src="/assets/images/Group 2.png"
+                  alt="American Standard Logo"
+                  class="h-6 cursor-pointer  "
+                />
+             </div>
+              </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="">
+              <div class="relative bg-white  rounded-tl-full rounded-tr-sm rounded-br-sm rounded-bl-sm  ">
+                <!-- Technician Image -->
+                <img
+                  src="/assets/images/hero model.png"
+                  alt="Technician"
+                  class="w-full rounded-lg left-3"
+                />
+
+                <!-- Badge & Google Rating -->
+                <div class="absolute top-6 -left-8  text-black px-4 py-2 rounded">
+                  <img src="/assets/images/warranty.png" alt="" />
+                </div>
+                <div
+                  class="absolute bottom-7 left-10 bg-white text-black px-6 py-4 rounded shadow-md     gap-2 text-sm"
+                >
+                  <img
+                    src="/assets/images/google.png"
+                    alt="Google Icon"
+                    class="h-6 bottom-6 ml-2 items-center"
+                  />
+                  <span class="mt-8">4.8 (698)</span>
+                </div>
+
+                <div
+                
+                  class="absolute top-32 right-20 bg-white text-black px-4 py-2 rounded shadow-md text-sm"
+                >
+                <div>
+                    <img
+                    src="/assets/images/shield-02.png"
+                    alt="Google Icon"
+                    class="h-6 bottom-6 ml-5 items-center"
+                  />
+                  <span>C20-987654</span>
+                </div>
+                </div>
+              </div>
+
+              <!-- Mini Image Cards -->
+              <div class="grid grid-cols-2 gap-2 mt-4">
+                <div class="relative">
+                  <img
+                    src="/assets/images/past work one.png"
+                    alt="Work 1"
+                    class="w-full h-28 object-cover rounded-lg"
+                  />
+                  <button
+                    class="absolute bottom-2 left-2 bg-green-800 cursor-pointer text-white px-3 py-1 text-sm rounded-md"
+                  >
+                    View Details
+                  </button>
+                </div>
+                <div class="relative">
+                  <img
+                    src="/assets/images/past work two.png"
+                    alt="Work 2"
+                    class="w-full h-28 object-cover rounded-lg"
+                  />
+                  <button
+                    class="absolute bottom-2 left-2 bg-green-800 cursor-pointer text-white px-3 py-1 text-sm rounded-md"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+    
+
+    <!--  -->
+    <section class="py-16 bg-white text-center px-4">
+  <h2 class="text-4xl sm:text-3xl font-semibold mb-10">Trusted by Families Like Yours</h2>
+
+  <div class="  grid grid-cols-1 mt-8 sm:grid-cols-2   lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+    
+    <!-- Card 1 -->
+    <div class="bg-white shadow-lg rounded-2xl  flex flex-col items-center text-center">
+      <img src="/assets/images/Frame.png" alt="Mason Carter" class="w-12 h-12 rounded-full mb-3">
+      <h3 class="font-semibold">Mason Carter</h3>
+      <div class="flex gap-1 my-2 text-yellow-500">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <p class="text-gray-600 text-sm mb-3">
+        “Super professional service, quick <br> installation, and everything works <br> perfectly. Highly recommend!”
+      </p>
+      <p class="text-xs text-gray-500 flex items-center gap-1">
+        <img src="/assets/images/google.png" alt="Google" class="w-4 h-4"> Reviewed on Google
+      </p>
+    </div>
+
+    <!-- Card 2 (Highlighted) -->
+    <div class="bg-green-700 text-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
+      <img src="/assets/images/Frame2.png" alt="Chloe Anderson" class="w-12 h-12 rounded-full mb-3">
+      <h3 class="font-semibold">Chloe Anderson</h3>
+      <div class="flex gap-1 my-2 text-yellow-300">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <p class="text-sm mb-3">
+        “Very happy with their work! The <br> team was efficient and the new <br> system runs great.”
+      </p>
+      <p class="text-xs flex items-center gap-1">
+        <img src="/assets/images/google.png" alt="Google" class="w-4 h-4"> Reviewed on Google
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="bg-white shadow-lg rounded-2xl p-10 flex flex-col items-center text-center">
+      <img src="/assets/images/Frame3.png" alt="Skylar Bennett" class="w-12 h-12 rounded-full mb-3">
+      <h3 class="font-semibold">Skylar Bennett</h3>
+      <div class="flex gap-1 my-2 text-yellow-500">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <p class="text-gray-600 text-sm mb-3">
+        “Great experience from start to <br> finish. Honest pricing and top- <br> notch service!”
+      </p>
+      <p class="text-xs text-gray-500 flex items-center gap-1">
+        <img src="/assets/images/google.png" alt="Google" class="w-4 h-4"> Reviewed on Google
+      </p>
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="mt-10">
+    <button class="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-800 transition">
+      View more
+    </button>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="py-16 bg-white text-center px-4">
+  <h2 class="text-2xl sm:text-3xl font-semibold mb-12">Your Trusted HVAC Experts</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
+    
+    <!-- ISO 9001 -->
+    <div class="flex flex-col items-center">
+      <img src="/assets/images/" alt="ISO 9001 Certified" class="w-20 sm:w-24 mb-3">
+      <p class="font-medium">ISO 9001 Certified</p>
+      <p class="text-sm text-gray-500">Quality Management for HVAC Excellence</p>
+    </div>
+
+    <!-- ISO 14001 -->
+    <div class="flex flex-col items-center">
+      <img src="/assets/images/iso14001.png" alt="ISO 14001 Certified" class="w-20 sm:w-24 mb-3">
+      <p class="font-medium">ISO 14001 Certification</p>
+      <p class="text-sm text-gray-500">Eco-Friendly HVAC Solutions</p>
+    </div>
+
+    <!-- EPA -->
+    <div class="flex flex-col items-center">
+      <img src="/assets/images/epa.png" alt="EPA Certified" class="w-20 sm:w-24 mb-3">
+      <p class="font-medium">EPA Certified</p>
+    </div>
+
+    <!-- BBB -->
+    <div class="flex flex-col items-center">
+      <img src="/assets/images/bbb.png" alt="BBB Accredited" class="w-20 sm:w-24 mb-3">
+      <p class="font-medium">BBB Accredited</p>
+    </div>
+
+    <!-- NATE -->
+    <div class="flex flex-col items-center">
+      <img src="/assets/images/Layer_1.png" alt="NATE Certified" class="w-20 sm:w-24 mb-3">
+      <p class="font-medium">NATE Certified</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js -->
+    <script src="./custom.js"></script>
+  </body>
+</html>
