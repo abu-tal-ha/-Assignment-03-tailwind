@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- navbar is start  -->
-    <section class="relative min-h-screen m-0   p-0 overflow-x-hidden">
+    <section class="relative   m-0  p-0 overflow-x-hidden">
       <!-- Background Image Layer -->
       <div class="absolute inset-0 z-0">
         <img
@@ -127,7 +127,7 @@
                   class="p-3 rounded border border-green-600 text-black"
                 />
                 <input
-                  type="text"
+                  type="number"
                   placeholder="Phone"
                   class="p-3 rounded border border-green-600 text-black"
                 />
@@ -246,138 +246,79 @@
 
     
 
-    <!--  -->
-    <section class="py-16 bg-white text-center px-4">
-  <h2 class="text-4xl sm:text-3xl font-semibold mb-10">Trusted by Families Like Yours</h2>
+    <!-- Families Like  card section is start -->
+    <section class="py-16    px-4 max-w-6xl mx-auto">
+  <h2 class="text-4xl sm:text-3xl text-center font-semibold mb-10">Trusted by Families Like Yours</h2>
 
-  <div class="  grid grid-cols-1 mt-8 sm:grid-cols-2   lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-    
-    <!-- Card 1 -->
-    <div class="bg-white shadow-lg rounded-2xl  flex flex-col items-center text-center">
-      <img src="/assets/images/Frame.png" alt="Mason Carter" class="w-12 h-12 rounded-full mb-3">
-      <h3 class="font-semibold">Mason Carter</h3>
-      <div class="flex gap-1 my-2 text-yellow-500">
-        ⭐⭐⭐⭐⭐
-      </div>
-      <p class="text-gray-600 text-sm mb-3">
-        “Super professional service, quick <br> installation, and everything works <br> perfectly. Highly recommend!”
-      </p>
-      <p class="text-xs text-gray-500 flex items-center gap-1">
-        <img src="/assets/images/google.png" alt="Google" class="w-4 h-4"> Reviewed on Google
-      </p>
-    </div>
-
-    <!-- Card 2 (Highlighted) -->
-    <div class="bg-green-700 text-white shadow-lg rounded-2xl p-6 flex flex-col items-center text-center">
-      <img src="/assets/images/Frame2.png" alt="Chloe Anderson" class="w-12 h-12 rounded-full mb-3">
-      <h3 class="font-semibold">Chloe Anderson</h3>
-      <div class="flex gap-1 my-2 text-yellow-300">
-        ⭐⭐⭐⭐⭐
-      </div>
-      <p class="text-sm mb-3">
-        “Very happy with their work! The <br> team was efficient and the new <br> system runs great.”
-      </p>
-      <p class="text-xs flex items-center gap-1">
-        <img src="/assets/images/google.png" alt="Google" class="w-4 h-4"> Reviewed on Google
-      </p>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="bg-white shadow-lg rounded-2xl p-10 flex flex-col items-center text-center">
-      <img src="/assets/images/Frame3.png" alt="Skylar Bennett" class="w-12 h-12 rounded-full mb-3">
-      <h3 class="font-semibold">Skylar Bennett</h3>
-      <div class="flex gap-1 my-2 text-yellow-500">
-        ⭐⭐⭐⭐⭐
-      </div>
-      <p class="text-gray-600 text-sm mb-3">
-        “Great experience from start to <br> finish. Honest pricing and top- <br> notch service!”
-      </p>
-      <p class="text-xs text-gray-500 flex items-center gap-1">
-        <img src="/assets/images/google.png" alt="Google" class="w-4 h-4"> Reviewed on Google
-      </p>
-    </div>
+<div class="grid grid-cols-3 sm:grid-cols-1  gap-10 mt-8  ">
+  
+    <div class="bg-white shadow-lg rounded-4xl p-6 flex flex-col items-center text-center">
+  <img class="mx-auto mb-3" src="/assets/images/Frame.png" alt="">
+  <h3 class="font-semibold mb-2">Mason Carter</h3>
+  <div class="flex gap-1 text-yellow-500 mb-2">
+    <i class="fa-solid fa-star "></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
   </div>
+  <p class="text-sm text-gray-600 mt-3">
+    “Super professional service, quick <br> installation, and everything works <br> perfectly. Highly recommend!”
+  </p>
 
+  <div class="mt-4">
+    <img src="/assets/images/google.png" alt="" class="w-4 h-4 ml-6 ">
+    <h4 class="text-xs text-gray-500 mb-6">Reviewed on Google</h4>
+  </div>
+</div>
+    <div class="bg-green-800  text-white shadow-lg rounded-4xl p-6 flex flex-col items-center text-center">
+  <img class="mx-auto mb-3" src="/assets/images/Frame2.png" alt="">
+  <h3 class="font-semibold mb-2">Chloe Anderson</h3>
+  <div class="flex gap-1 text-yellow-500 mb-2">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <p class="text-sm text-gray-600 mt-3">
+    “Very happy with their work! The <br> team was efficient and the new <br> system runs great.”
+  </p>
+
+ <div class="mt-4">
+    <img src="/assets/images/google.png" alt="" class="w-4 h-4 ml-6 ">
+    <h4 class="text-xs text-gray-500 mb-6">Reviewed on Google</h4>
+  </div>
+</div>
+    <div class="bg-white shadow-lg rounded-4xl p-6 flex flex-col items-center text-center">
+  <img class="mx-auto mb-3" src="/assets/images/Frame3.png" alt="">
+  <h3 class="font-semibold mb-2">Skylar Bennett</h3>
+  <div class="flex gap-1 text-yellow-500 mb-2">
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+  </div>
+  <p class="text-sm text-gray-600 mt-3">
+    “Great experience from start to <br> finish. Honest pricing and top- <br> notch service!”
+  </p>
+
+   <div class="mt-4">
+    <img src="/assets/images/google.png" alt="" class="w-4 h-4 ml-6 ">
+    <h4 class="text-xs text-gray-500 mb-6">Reviewed on Google</h4>
+  </div>
+</div>
+</div>
+ 
   <!-- Button -->
-  <div class="mt-10">
+  <div class="mt-10 text-center">
     <button class="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-800 transition">
       View more
     </button>
   </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-<section class="py-16 bg-white text-center px-4">
-  <h2 class="text-2xl sm:text-3xl font-semibold mb-12">Your Trusted HVAC Experts</h2>
-
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">
-    
-    <!-- ISO 9001 -->
-    <div class="flex flex-col items-center">
-      <img src="/assets/images/" alt="ISO 9001 Certified" class="w-20 sm:w-24 mb-3">
-      <p class="font-medium">ISO 9001 Certified</p>
-      <p class="text-sm text-gray-500">Quality Management for HVAC Excellence</p>
-    </div>
-
-    <!-- ISO 14001 -->
-    <div class="flex flex-col items-center">
-      <img src="/assets/images/iso14001.png" alt="ISO 14001 Certified" class="w-20 sm:w-24 mb-3">
-      <p class="font-medium">ISO 14001 Certification</p>
-      <p class="text-sm text-gray-500">Eco-Friendly HVAC Solutions</p>
-    </div>
-
-    <!-- EPA -->
-    <div class="flex flex-col items-center">
-      <img src="/assets/images/epa.png" alt="EPA Certified" class="w-20 sm:w-24 mb-3">
-      <p class="font-medium">EPA Certified</p>
-    </div>
-
-    <!-- BBB -->
-    <div class="flex flex-col items-center">
-      <img src="/assets/images/bbb.png" alt="BBB Accredited" class="w-20 sm:w-24 mb-3">
-      <p class="font-medium">BBB Accredited</p>
-    </div>
-
-    <!-- NATE -->
-    <div class="flex flex-col items-center">
-      <img src="/assets/images/Layer_1.png" alt="NATE Certified" class="w-20 sm:w-24 mb-3">
-      <p class="font-medium">NATE Certified</p>
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Families Like  card section is end -->
 
 
 
